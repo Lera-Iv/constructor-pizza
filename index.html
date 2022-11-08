@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Конструктор пиццы</h1></header>
+    <div class="wrapper">
+        <div class="pizza-conteiner">
+            <div class="conteiner-choseIngredients">
+                <div class="ingredients_list_item">
+                    <div class="pizza__column pizza__column-1">
+                 <div class="pizza__title">Область просмотра заказа</div>
+                        <div id="view__order"></div>
+                        <div class="pizza__prices">К оплате: <span id="summa"></span></div>
+                     </div>
+                </div>
+                <div class="pizza__column pizza__column-2">
+                    <div class="image">
+                        <img class="current-pizza" src="img/0.png">
+                    </div>
+                    
+                    <div class="button__order"><button id="button" ></button>Заказать</div>
+                </div>
+            </div>
+                    
+            <div class="pizzabase">
+                        <div class="allForPizza">
+                            <div class="osnova">
+                                <label class="ingredients-pizza__label">Основа</label>
+                                <ul class="ingredients-pizza__list" canCheck="1">
+                                   <li price="6" class="ingredients-pizza__item">Классическая</li>
+                                   <li price="6" class="ingredients-pizza__item">Толстое тесто</li>
+                                   <li price="9" class="ingredients-pizza__item">Сырный борт</li>
+                                   <li price="9" class="ingredients-pizza__item">Хот-Дог борт</li>
+                                </ul>
+                             </div>
+                             <div class="meet">
+                                <label class="ingredients-pizza__label">Мясо</label>
+                                <ul class="ingredients-pizza__list" canCheck="2">
+                                   <li price="6" class="ingredients-pizza__item">Ветчина</li>
+                                   <li price="6" class="ingredients-pizza__item">Бекон</li>
+                                   <li price="5" class="ingredients-pizza__item">Курица</li>
+                                   <li price="5" class="ingredients-pizza__item">Пипперони</li>
+                                </ul>
+                             </div>
+                             <div class="vegetables">
+                                <label class="ingredients-pizza__label">Овощи</label>
+                                <ul class="ingredients-pizza__list" canCheck="2">
+                                   <li price="4" class="ingredients-pizza__item">Перец</li>
+                                   <li price="3" class="ingredients-pizza__item">Помидоры</li>
+                                   <li price="4" class="ingredients-pizza__item">Оливки</li>
+                                   <li price="3" class="ingredients-pizza__item">Грибы</li>
+                                </ul>
+                             </div>
+                             <div class="sause">
+                                <label class="ingredients-pizza__label">Соусы</label>
+                                <ul class="ingredients-pizza__list" canCheck="1">
+                                   <li price="2" class="ingredients-pizza__item">Сырный</li>
+                                   <li price="2" class="ingredients-pizza__item">Томатный</li>
+                                   <li price="2" class="ingredients-pizza__item">Барбекю</li>
+                                   <li price="2" class="ingredients-pizza__item">Горчичный</li>
+                                </ul>
+                             </div>
+                            
+                            </div>
+                        </div>
+            </div>
+        </div>
+    <div class="modal-window none">
+        <div class="modal-window__content">
+            <p class="modal-window__subject">
+                <span class="modal-window__ingredients"></span>
+            </p>
+            <button class="modal-window__submit-btn">
+                Заказать
+            </button>
+        </div>
+    </div>       
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
